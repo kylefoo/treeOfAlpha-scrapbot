@@ -1,0 +1,15 @@
+{
+  "name": "scrapbot-puppeteer-serverless",
+  "author": {
+    "name": "Kyle Foo",
+    "email": "fung933@gmail.com"
+  },
+  "scripts": {
+    "deploy": "serverless deploy",
+    "invoke": "serverless invoke -f puppeteerExample"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "123.0.1",
+    "puppeteer-core": "22.7.1"
+  }
+}

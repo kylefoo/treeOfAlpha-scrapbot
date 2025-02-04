@@ -1,0 +1,15 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: primeedge
+service: scrapbot-puppeteer-serverless
+app: scrapbot
+provider:
+  name: aws
+  region: us-east-2
+  runtime: nodejs18.x
+
+functions:
+  puppeteerExample:
+    handler: run_puppeteer.handler
+    timeout: 300
+    # events:
+    #   - schedule: rate(10 minutes)
